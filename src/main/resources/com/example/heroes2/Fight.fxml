@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.heroes2.Fight">
+    <children>
+        <AnchorPane fx:id="Lleft" layoutY="8.0" prefHeight="770.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1071.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <TextField fx:id="inputGriff" layoutX="51.0" layoutY="609.0" />
+            <TextField fx:id="inputIjasz" layoutX="51.0" layoutY="554.0" />
+            <TextField fx:id="InputFoldmuves" layoutX="51.0" layoutY="660.0" />
+            <Button fx:id="start" layoutY="10.0" mnemonicParsing="false" onAction="#csata" text="START" />
+            <Button fx:id="vasarlas" layoutX="100.0" layoutY="708.0" mnemonicParsing="false" onAction="#vasarlas" text="Vásárlás" />
+            <Label fx:id="Lhos" layoutX="38.0" layoutY="72.0" text="Válaszd ki a nehézségi szintet" />
+            <Label fx:id="adat" layoutX="180.0" layoutY="134.0" text="Label" AnchorPane.rightAnchor="47.0" />
+            <Label fx:id="lbIjasz" layoutX="112.0" layoutY="515.0" text="Íjász(6)" />
+            <Label fx:id="lbGriff" layoutX="116.0" layoutY="579.0" text="Griff(15)" />
+            <Label fx:id="lbFoldmuves" layoutX="117.0" layoutY="634.0" text="Földműves(2)" />
+            <Button fx:id="adVedekezes" layoutX="2.0" layoutY="176.0" mnemonicParsing="false" onAction="#adVedekezes" text="Vedekezes" />
+            <Button fx:id="adMoral" layoutX="1.0" layoutY="142.0" mnemonicParsing="false" onAction="#adMoral" text="Moral" />
+            <Button fx:id="adTamadas" layoutX="1.0" layoutY="210.0" mnemonicParsing="false" onAction="#adTamadas" text="Tamadas" />
+            <Button fx:id="adSzerencse" layoutX="-1.0" layoutY="243.0" mnemonicParsing="false" onAction="#adSzerencse" text="Szerencse" />
+            <Button fx:id="adTudas" layoutX="1.0" layoutY="277.0" mnemonicParsing="false" onAction="#adTudas" text="Tudas" />
+            <Button fx:id="adVarazsero" layoutX="-1.0" layoutY="309.0" mnemonicParsing="false" onAction="#adVarazsero" text="Varazsero" />
+            <ChoiceBox fx:id="choiseBox" layoutX="42.0" layoutY="105.0" prefWidth="150.0" />
+            <Button fx:id="tuzlabda" layoutX="12.0" layoutY="453.0" mnemonicParsing="false" onAction="#addTuzlabda" text="Tűzlabda" />
+            <Button fx:id="feltamadas" layoutX="10.0" layoutY="478.0" mnemonicParsing="false" onAction="#addFeltam" text="Feltámadás" />
+            <Button fx:id="bvillam" layoutX="9.0" layoutY="503.0" mnemonicParsing="false" onAction="#addVillam" text="Villám" />
+         </children></AnchorPane>
+        <AnchorPane fx:id="Rright" layoutX="1030.0" prefHeight="770.0" prefWidth="291.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1030.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label fx:id="ellenSegereg" layoutX="109.0" layoutY="30.0" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+            <Label fx:id="elTulajdonsag" layoutX="107.0" layoutY="116.0" text="Label" />
+         </children></AnchorPane>
+        <AnchorPane fx:id="palya" layoutX="157.0" prefHeight="770.0" prefWidth="644.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="306.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label fx:id="LbVarazs" layoutX="14.0" layoutY="688.0" prefHeight="68.0" prefWidth="199.0" text="Varázslatok" />
+            <Label fx:id="Menetek" layoutX="206.0" layoutY="721.0" onDragDetected="#menetMutat" prefHeight="17.0" prefWidth="280.0" text="Label" AnchorPane.topAnchor="721.0" />
+            <Label fx:id="ellensegTamad" layoutX="341.0" layoutY="719.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="info" layoutX="586.0" layoutY="6.0" text="Label" />
+      <Label fx:id="enyem" layoutX="278.0" layoutY="6.0" text="Label" />
+    </children>
+</AnchorPane>

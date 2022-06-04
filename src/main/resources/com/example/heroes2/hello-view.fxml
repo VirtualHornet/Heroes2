@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.heroes2.HelloController">
+    <children>
+        <AnchorPane fx:id="APbal" prefHeight="400.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="900.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="btnE" layoutY="682.0" mnemonicParsing="false" onMouseClicked="#butExitClicked" prefHeight="34.0" prefWidth="201.0" text="Exit" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="84.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <font>
+                        <Font name="Calibri Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="74.0" layoutY="240.0" mnemonicParsing="false" onAction="#switchToScene1" text="Start" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <font>
+                        <Font name="Calibri Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="4.0" layoutY="72.0" prefHeight="94.0" prefWidth="218.0" text="Heroes of Mith and Magic" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <font>
+                        <Font name="Courier New Bold Italic" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="background" layoutX="300.0" layoutY="44.0" prefHeight="756.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>
